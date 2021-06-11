@@ -1,3 +1,5 @@
+alert('program ini adalah \nPlayer VS AI \nPeraturan sederhana jika kamu berhasil \nmencapai score 5 lebih dulu berarti kamu MENANG');
+
 function getPilihanComputer() {
   const comp = Math.floor(Math.random() * 3);
 
@@ -56,8 +58,8 @@ selection.forEach(function (select) {
         scoreC++;
         scoreComp.textContent = scoreC;
       }
-      if (scoreC >= 10) alert('KAMU KALAH \nSilahkan tekan tombol reset!');
-      if (scoreP >= 10) alert('KAMU MENANG \nSilahkan tekan tombol reset!');
+      if (scoreC >= 5) alert('KAMU KALAH \nSilahkan tekan tombol reset!');
+      if (scoreP >= 5) alert('KAMU MENANG \nSilahkan tekan tombol reset!');
     }, 1000);
     const reset = document.querySelector('.undo');
     reset.addEventListener('click', function () {
